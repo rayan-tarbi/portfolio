@@ -1,4 +1,3 @@
-/* IMPORTATION DE LA POLICE */
 @font-face {
     font-family: 'DoctorGlitch';
     src: url('fonts/Doctor\ Glitch.otf') format('truetype');
@@ -6,7 +5,6 @@
     font-style: normal;
 }
 
-/* RESET DE BASE */
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +15,12 @@ body {
     font-family: 'DoctorGlitch', sans-serif;
     background-color: #9d1616;
     color: #ffffff;
-    line-height: 2; /* Augmenté par 1.5 */
+    line-height: 2;
 }
 
-/* NAVIGATION */
 nav {
     background-color: #6e1a1a;
-    padding: 15px 0; /* Augmenté par 1.5 */
+    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,19 +28,18 @@ nav {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.5); /* Augmenté par 1.5 */
-}
+    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.5);
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Augmenté par 1.5 */
+    gap: 30px;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.8em; /* Augmenté par 1.5 */
+    font-size: 1.8em;
     transition: color 0.3s ease-in-out, transform 0.2s;
 }
 
@@ -52,7 +48,6 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* SECTION PRINCIPALE */
 .home-section {
     display: flex;
     flex-direction: row;
@@ -60,36 +55,35 @@ nav ul li a:hover {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    gap: 60px; /* Augmenté par 1.5 */
+    gap: 60px;
 }
 
-/* TITRE GÉANT */
 .home-content {
     text-align: left;
 }
 
 .home-content h1 {
-    font-size: 7em; /* Augmenté par 1.5 */
+    font-size: 7em;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 30px; /* Augmenté par 1.5 */
+    margin-bottom: 30px;
 }
 
 .home-content p {
-    font-size: 1em; /* Augmenté par 1.5 */
-    margin-bottom: 15px; /* Augmenté par 1.5 */
+    font-size: 1em;
+    margin-bottom: 15px; 
 }
 
 .social-icons {
     display: flex;
-    gap: 15px; /* Augmenté par 1.5 */
+    gap: 15px;
     justify-content: left;
-    margin-top: 30px; /* Augmenté par 1.5 */
+    margin-top: 30px;
 }
 
 .social-icons img {
-    width: 60px; /* Augmenté par 1.5 */
-    height: 60px; /* Augmenté par 1.5 */
+    width: 60px;
+    height: 60px; 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -97,40 +91,37 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-/* CAROUSEL ET EXTRA IMAGE */
 .carousel-container-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* CAROUSEL ET EXTRA IMAGE SECTION */
 .carousel-container-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; /* Supprime tout espace entre le carousel et l'image supplémentaire */
+    gap: 0; 
 }
 
-/* CAROUSEL */
 .carousel {
     width: 70%;
-    max-width: 325px; /* Réduction à 50 % de la taille initiale */
+    max-width: 325px; 
     position: relative;
     overflow: hidden;
-    margin: 0 auto; /* Centré horizontalement */
-    border: 3px solid #ffffff; /* Bordure blanche pour démarcation */
-    border-radius: 7.5px; /* Coins arrondis */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Ombre pour profondeur */
+    margin: 0 auto;
+    border: 3px solid #ffffff; 
+    border-radius: 7.5px; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
 }
 
 .carousel-container {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Transition fluide pour les déplacements */
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-    min-width: 100%; /* Chaque item occupe toute la largeur du carousel */
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,88 +130,81 @@ nav ul li a:hover {
 .carousel-item img {
     width: 100%;
     height: auto;
-    border-radius: 2.5px; /* Coins légèrement arrondis */
+    border-radius: 2.5px;
     display: block;
 }
 
-/* IMAGE SUPPLÉMENTAIRE */
 .extra-image {
     width: 100%;
-    max-width: 325px; /* Réduction à 50 % de la taille initiale */
+    max-width: 325px;
     text-align: center;
-    margin-top: -70px; /* Monte l'image vers le haut */
+    margin-top: -70px;
 }
 
 .extra-image img {
     width: 100%;
     height: auto;
-    border-radius: 7.5px; /* Coins arrondis */
+    border-radius: 7.5px;
     display: block;
 }
-/* STYLES DE BASE POUR LES BOUTONS */
 button {
-    font-family: 'DoctorGlitch', sans-serif; /* Utilise votre police importée */
-    font-size: 1.2em; /* Taille du texte */
-    color: #ffffff; /* Couleur du texte */
-    background-color: #c60000; /* Couleur de fond principale */
-    border: 2px solid #ffffff; /* Bordure blanche fine */
-    border-radius: 8px; /* Coins arrondis */
-    padding: 10px 20px; /* Espacement interne */
-    cursor: pointer; /* Curseur interactif */
-    transition: all 0.3s ease-in-out; /* Transitions pour les effets */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    font-family: 'DoctorGlitch', sans-serif;
+    font-size: 1.2em; 
+    color: #ffffff; 
+    background-color: #c60000;
+    border: 2px solid #ffffff;
+    border-radius: 8px; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* EFFETS AU SURVOL */
 button:hover {
-    background-color: #ffffff; /* Inverse la couleur de fond */
-    color: #c60000; /* Inverse la couleur du texte */
-    transform: scale(1.05); /* Agrandit légèrement le bouton */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
+    background-color: #ffffff; 
+    color: #c60000; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
-/* EFFETS LORS DU CLIC */
 button:active {
-    transform: scale(0.95); /* Réduit légèrement le bouton */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Diminue l'ombre */
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* BOUTONS DÉSACTIVÉS */
 button:disabled {
-    background-color: #6e1a1a; /* Couleur de fond gris-rouge terne */
-    color: #bbbbbb; /* Texte gris clair */
-    border-color: #bbbbbb; /* Bordure gris clair */
-    cursor: not-allowed; /* Curseur interdit */
-    box-shadow: none; /* Pas d'ombre */
+    background-color: #6e1a1a; 
+    color: #bbbbbb;
+    border-color: #bbbbbb;
+    cursor: not-allowed;
+    box-shadow: none;
 }
 
-/* VARIANTE : BOUTON SECONDARY */
 button.secondary {
-    background-color: #6e1a1a; /* Rouge foncé */
-    color: #ffffff; /* Texte blanc */
-    border-color: #ffffff; /* Bordure blanche */
+    background-color: #6e1a1a; 
+    color: #ffffff; 
+    border-color: #ffffff; 
 }
 
 button.secondary:hover {
-    background-color: #c60000; /* Rouge vif au survol */
-    color: #ffffff; /* Texte blanc */
-    transform: scale(1.05); /* Agrandit légèrement */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
+    background-color: #c60000;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .home-section {
         flex-direction: column;
-        gap: 30px; /* Augmenté par 1.5 */
+        gap: 30px; 
     }
 
     .home-content h1 {
-        font-size: 9em; /* Augmenté par 1.5 */
+        font-size: 9em; 
     }
 
     .carousel, .extra-image {
-        width: 100%; /* Augmenté par 1.5 */
+        width: 100%; 
     }
 }
 .about-section {
@@ -228,21 +212,21 @@ button.secondary:hover {
     color: #ffffff;
 }
 .about-section {
-    background-color: #6e1a1a; /* Rouge un peu plus foncé */
-    color: #eeeeee; /* Gris clair */
+    background-color: #6e1a1a;
+    color: #eeeeee;
     padding: 50px 0;
 }
 .about-content {
-    text-align: center; /* Centre le contenu */
+    text-align: center;
     margin: 20px;
 }
 
 .profile-image {
-    width: 200px; /* Largeur de l'image */
-    height: 200px; /* Hauteur de l'image */
-    border-radius: 50%; /* Rend la boîte ovale (ou circulaire si largeur = hauteur) */
-    object-fit: cover; /* Adapte l'image à la boîte sans la déformer */
-    border: 5px solid #ccc; /* Ajoute une bordure autour de l'image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet esthétique */
-    margin-top: 20px; /* Ajoute un espace au-dessus de l'image */
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 5px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px; 
 }
