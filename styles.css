@@ -1,0 +1,248 @@
+/* IMPORTATION DE LA POLICE */
+@font-face {
+    font-family: 'DoctorGlitch';
+    src: url('fonts/Doctor\ Glitch.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RESET DE BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DoctorGlitch', sans-serif;
+    background-color: #9d1616;
+    color: #ffffff;
+    line-height: 2; /* Augmenté par 1.5 */
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #6e1a1a;
+    padding: 15px 0; /* Augmenté par 1.5 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.5); /* Augmenté par 1.5 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Augmenté par 1.5 */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8em; /* Augmenté par 1.5 */
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+nav ul li a:hover {
+    color: #c60000;
+    transform: scale(1.1);
+}
+
+/* SECTION PRINCIPALE */
+.home-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    gap: 60px; /* Augmenté par 1.5 */
+}
+
+/* TITRE GÉANT */
+.home-content {
+    text-align: left;
+}
+
+.home-content h1 {
+    font-size: 7em; /* Augmenté par 1.5 */
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px; /* Augmenté par 1.5 */
+}
+
+.home-content p {
+    font-size: 1em; /* Augmenté par 1.5 */
+    margin-bottom: 15px; /* Augmenté par 1.5 */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Augmenté par 1.5 */
+    justify-content: left;
+    margin-top: 30px; /* Augmenté par 1.5 */
+}
+
+.social-icons img {
+    width: 60px; /* Augmenté par 1.5 */
+    height: 60px; /* Augmenté par 1.5 */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* CAROUSEL ET EXTRA IMAGE */
+.carousel-container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CAROUSEL ET EXTRA IMAGE SECTION */
+.carousel-container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0; /* Supprime tout espace entre le carousel et l'image supplémentaire */
+}
+
+/* CAROUSEL */
+.carousel {
+    width: 70%;
+    max-width: 325px; /* Réduction à 50 % de la taille initiale */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Centré horizontalement */
+    border: 3px solid #ffffff; /* Bordure blanche pour démarcation */
+    border-radius: 7.5px; /* Coins arrondis */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Ombre pour profondeur */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transition fluide pour les déplacements */
+}
+
+.carousel-item {
+    min-width: 100%; /* Chaque item occupe toute la largeur du carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px; /* Coins légèrement arrondis */
+    display: block;
+}
+
+/* IMAGE SUPPLÉMENTAIRE */
+.extra-image {
+    width: 100%;
+    max-width: 325px; /* Réduction à 50 % de la taille initiale */
+    text-align: center;
+    margin-top: -70px; /* Monte l'image vers le haut */
+}
+
+.extra-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 7.5px; /* Coins arrondis */
+    display: block;
+}
+/* STYLES DE BASE POUR LES BOUTONS */
+button {
+    font-family: 'DoctorGlitch', sans-serif; /* Utilise votre police importée */
+    font-size: 1.2em; /* Taille du texte */
+    color: #ffffff; /* Couleur du texte */
+    background-color: #c60000; /* Couleur de fond principale */
+    border: 2px solid #ffffff; /* Bordure blanche fine */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Curseur interactif */
+    transition: all 0.3s ease-in-out; /* Transitions pour les effets */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* EFFETS AU SURVOL */
+button:hover {
+    background-color: #ffffff; /* Inverse la couleur de fond */
+    color: #c60000; /* Inverse la couleur du texte */
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
+}
+
+/* EFFETS LORS DU CLIC */
+button:active {
+    transform: scale(0.95); /* Réduit légèrement le bouton */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Diminue l'ombre */
+}
+
+/* BOUTONS DÉSACTIVÉS */
+button:disabled {
+    background-color: #6e1a1a; /* Couleur de fond gris-rouge terne */
+    color: #bbbbbb; /* Texte gris clair */
+    border-color: #bbbbbb; /* Bordure gris clair */
+    cursor: not-allowed; /* Curseur interdit */
+    box-shadow: none; /* Pas d'ombre */
+}
+
+/* VARIANTE : BOUTON SECONDARY */
+button.secondary {
+    background-color: #6e1a1a; /* Rouge foncé */
+    color: #ffffff; /* Texte blanc */
+    border-color: #ffffff; /* Bordure blanche */
+}
+
+button.secondary:hover {
+    background-color: #c60000; /* Rouge vif au survol */
+    color: #ffffff; /* Texte blanc */
+    transform: scale(1.05); /* Agrandit légèrement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        gap: 30px; /* Augmenté par 1.5 */
+    }
+
+    .home-content h1 {
+        font-size: 9em; /* Augmenté par 1.5 */
+    }
+
+    .carousel, .extra-image {
+        width: 100%; /* Augmenté par 1.5 */
+    }
+}
+.about-section {
+    background-color: #6e1a1a;
+    color: #ffffff;
+}
+.about-section {
+    background-color: #6e1a1a; /* Rouge un peu plus foncé */
+    color: #eeeeee; /* Gris clair */
+    padding: 50px 0;
+}
+.about-content {
+    text-align: center; /* Centre le contenu */
+    margin: 20px;
+}
+
+.profile-image {
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rend la boîte ovale (ou circulaire si largeur = hauteur) */
+    object-fit: cover; /* Adapte l'image à la boîte sans la déformer */
+    border: 5px solid #ccc; /* Ajoute une bordure autour de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet esthétique */
+    margin-top: 20px; /* Ajoute un espace au-dessus de l'image */
+}
