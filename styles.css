@@ -1,3 +1,4 @@
+/* IMPORTATION DE LA POLICE */
 @font-face {
     font-family: 'DoctorGlitch';
     src: url('fonts/Doctor\ Glitch.otf') format('truetype');
@@ -5,6 +6,7 @@
     font-style: normal;
 }
 
+/* RESET DE BASE */
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +17,13 @@ body {
     font-family: 'DoctorGlitch', sans-serif;
     background-color: #9d1616;
     color: #ffffff;
-    line-height: 2;
+    line-height: 2; /* Augmenté par 1.5 */
 }
 
+/* NAVIGATION */
 nav {
     background-color: #6e1a1a;
-    padding: 15px 0;
+    padding: 15px 0; /* Augmenté par 1.5 */
     position: fixed;
     top: 0;
     left: 0;
@@ -28,18 +31,19 @@ nav {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.5); /* Augmenté par 1.5 */
+}
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 30px; /* Augmenté par 1.5 */
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.8em; /* Augmenté par 1.5 */
     transition: color 0.3s ease-in-out, transform 0.2s;
 }
 
@@ -48,6 +52,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* SECTION PRINCIPALE */
 .home-section {
     display: flex;
     flex-direction: row;
@@ -55,35 +60,36 @@ nav ul li a:hover {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    gap: 60px;
+    gap: 60px; /* Augmenté par 1.5 */
 }
 
+/* TITRE GÉANT */
 .home-content {
     text-align: left;
 }
 
 .home-content h1 {
-    font-size: 7em;
+    font-size: 7em; /* Augmenté par 1.5 */
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Augmenté par 1.5 */
 }
 
 .home-content p {
-    font-size: 1em;
-    margin-bottom: 15px; 
+    font-size: 1em; /* Augmenté par 1.5 */
+    margin-bottom: 15px; /* Augmenté par 1.5 */
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Augmenté par 1.5 */
     justify-content: left;
-    margin-top: 30px;
+    margin-top: 30px; /* Augmenté par 1.5 */
 }
 
 .social-icons img {
-    width: 60px;
-    height: 60px; 
+    width: 60px; /* Augmenté par 1.5 */
+    height: 60px; /* Augmenté par 1.5 */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -91,37 +97,40 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
+/* CAROUSEL ET EXTRA IMAGE */
 .carousel-container-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* CAROUSEL ET EXTRA IMAGE SECTION */
 .carousel-container-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; 
+    gap: 0; /* Supprime tout espace entre le carousel et l'image supplémentaire */
 }
 
+/* CAROUSEL */
 .carousel {
     width: 70%;
-    max-width: 325px; 
+    max-width: 325px; /* Réduction à 50 % de la taille initiale */
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
-    border: 3px solid #ffffff; 
-    border-radius: 7.5px; 
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
+    margin: 0 auto; /* Centré horizontalement */
+    border: 3px solid #ffffff; /* Bordure blanche pour démarcation */
+    border-radius: 7.5px; /* Coins arrondis */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Ombre pour profondeur */
 }
 
 .carousel-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; /* Transition fluide pour les déplacements */
 }
 
 .carousel-item {
-    min-width: 100%;
+    min-width: 100%; /* Chaque item occupe toute la largeur du carousel */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,103 +139,234 @@ nav ul li a:hover {
 .carousel-item img {
     width: 100%;
     height: auto;
-    border-radius: 2.5px;
+    border-radius: 2.5px; /* Coins légèrement arrondis */
     display: block;
 }
 
+/* IMAGE SUPPLÉMENTAIRE */
 .extra-image {
     width: 100%;
-    max-width: 325px;
+    max-width: 325px; /* Réduction à 50 % de la taille initiale */
     text-align: center;
-    margin-top: -70px;
+    margin-top: -70px; /* Monte l'image vers le haut */
 }
 
 .extra-image img {
     width: 100%;
     height: auto;
-    border-radius: 7.5px;
+    border-radius: 7.5px; /* Coins arrondis */
     display: block;
 }
+/* STYLES DE BASE POUR LES BOUTONS */
 button {
-    font-family: 'DoctorGlitch', sans-serif;
-    font-size: 1.2em; 
-    color: #ffffff; 
-    background-color: #c60000;
-    border: 2px solid #ffffff;
-    border-radius: 8px; 
-    padding: 10px 20px;
-    cursor: pointer; 
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'DoctorGlitch', sans-serif; /* Utilise votre police importée */
+    font-size: 1.2em; /* Taille du texte */
+    color: #ffffff; /* Couleur du texte */
+    background-color: #c60000; /* Couleur de fond principale */
+    border: 2px solid #ffffff; /* Bordure blanche fine */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Curseur interactif */
+    transition: all 0.3s ease-in-out; /* Transitions pour les effets */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
 }
 
+/* EFFETS AU SURVOL */
 button:hover {
-    background-color: #ffffff; 
-    color: #c60000; 
-    transform: scale(1.05); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    background-color: #ffffff; /* Inverse la couleur de fond */
+    color: #c60000; /* Inverse la couleur du texte */
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
 }
 
+/* EFFETS LORS DU CLIC */
 button:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95); /* Réduit légèrement le bouton */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Diminue l'ombre */
 }
 
+/* BOUTONS DÉSACTIVÉS */
 button:disabled {
-    background-color: #6e1a1a; 
-    color: #bbbbbb;
-    border-color: #bbbbbb;
-    cursor: not-allowed;
-    box-shadow: none;
+    background-color: #6e1a1a; /* Couleur de fond gris-rouge terne */
+    color: #bbbbbb; /* Texte gris clair */
+    border-color: #bbbbbb; /* Bordure gris clair */
+    cursor: not-allowed; /* Curseur interdit */
+    box-shadow: none; /* Pas d'ombre */
 }
 
+/* VARIANTE : BOUTON SECONDARY */
 button.secondary {
-    background-color: #6e1a1a; 
-    color: #ffffff; 
-    border-color: #ffffff; 
+    background-color: #6e1a1a; /* Rouge foncé */
+    color: #ffffff; /* Texte blanc */
+    border-color: #ffffff; /* Bordure blanche */
 }
 
 button.secondary:hover {
-    background-color: #c60000;
-    color: #ffffff;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #c60000; /* Rouge vif au survol */
+    color: #ffffff; /* Texte blanc */
+    transform: scale(1.05); /* Agrandit légèrement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
 }
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .home-section {
         flex-direction: column;
-        gap: 30px; 
+        gap: 30px; /* Augmenté par 1.5 */
     }
 
     .home-content h1 {
-        font-size: 9em; 
+        font-size: 9em; /* Augmenté par 1.5 */
     }
 
     .carousel, .extra-image {
-        width: 100%; 
+        width: 100%; /* Augmenté par 1.5 */
     }
 }
 .about-section {
-    background-color: #6e1a1a;
-    color: #ffffff;
-}
-.about-section {
-    background-color: #6e1a1a;
-    color: #eeeeee;
+    background-color: #6e1a1a; /* Rouge un peu plus foncé */
+    color: #eeeeee; /* Gris clair */
     padding: 50px 0;
 }
 .about-content {
-    text-align: center;
+    text-align: center; /* Centre le contenu */
     margin: 20px;
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px; 
-    border-radius: 50%;
-    object-fit: cover; 
-    border: 5px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 20px; 
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rend la boîte ovale (ou circulaire si largeur = hauteur) */
+    object-fit: cover; /* Adapte l'image à la boîte sans la déformer */
+    border: 5px solid #ccc; /* Ajoute une bordure autour de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet esthétique */
+    margin-top: 70px; /* Ajoute un espace au-dessus de l'image */
 }
+/* Section globale pour les hobbies */
+.hobbies-section {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Aligne le titre et le contenu verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    min-height: 70vh; /* Augmente la hauteur minimale pour plus de place */
+    margin: 0; /* Supprime les marges pour éviter les décalages */
+    padding: 40px 0; /* Ajoute un peu plus d'espace en haut et en bas */
+    text-align: center; /* Centre le texte du titre */
+}
+
+/* Titre principal pour les hobbies */
+.hobbies-title {
+    font-size: 30px; /* Augmente légèrement la taille de la police */
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 25px; /* Ajoute un peu plus d'espace sous le titre */
+    color: #ffffff; /* Couleur blanche pour se démarquer */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+}
+
+/* Conteneur pour les images */
+.hobbies-content {
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: center; /* Aligne verticalement */
+    gap: 25px; /* Augmente légèrement l'espacement entre les boîtes */
+    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
+}
+
+/* Style pour chaque boîte */
+.hobby-box {
+    position: relative; /* Nécessaire pour superposer les images */
+    width: 180px; /* Augmente la largeur de chaque boîte */
+    height: 180px; /* Augmente la hauteur de chaque boîte */
+    text-align: center; /* Centre le contenu de la boîte */
+    border: 1px solid #ccc; /* Bordure légère autour de chaque boîte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    overflow: hidden; /* Coupe le contenu dépassant de la boîte */
+    transition: transform 0.3s ease; /* Animation sur la boîte entière */
+}
+
+/* Animation de la boîte au survol */
+.hobby-box:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Augmente l'ombre */
+}
+
+/* Texte descriptif */
+.hobby-box p {
+    position: absolute; /* Le texte est positionné au-dessus */
+    top: 10px; /* Espacement depuis le haut */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Ajustement pour le centrage */
+    font-size: 16px; /* Augmente légèrement la taille du texte */
+    color: #333; /* Couleur du texte */
+    z-index: 2; /* Mettre le texte devant les images */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc translucide pour lisibilité */
+    padding: 5px 12px; /* Augmente l'espacement autour du texte */
+    border-radius: 5px; /* Coins arrondis pour le texte */
+}
+
+/* Images principales */
+.hobby-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* L'image occupe toute la boîte */
+    height: 100%; /* L'image occupe toute la boîte */
+    object-fit: cover; /* Les images s'adaptent sans déformation */
+    transition: opacity 0.3s ease; /* Transition fluide pour l'opacité */
+}
+
+/* Cache le GIF par défaut */
+.hover-image {
+    opacity: 0;
+    z-index: 1; /* Mettre le GIF derrière le texte */
+}
+
+/* Affiche le GIF au survol */
+.hobby-box:hover .hover-image {
+    opacity: 1; /* Affiche le GIF */
+}
+
+/* Cache l'image statique au survol */
+.hobby-box:hover .hobby-image {
+    opacity: 0; /* Cache l'image statique */
+}
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.about-info {
+    position: absolute;
+    top: 50%; /* Alignement vertical */
+    transform: translateY(-50%);
+    display: flex; /* Disposition horizontale */
+    justify-content: space-between;
+    width: 400px; /* Largeur totale de la zone d'information */
+    left: 50%; /* Centrage horizontal initial */
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Pas de fond, les infos flottent autour */
+    color: #ffffff; /* Texte blanc */
+    font-size: 18px; /* Augmente la taille du texte */
+    text-align: center;
+    display: none; /* Masqué par défaut */
+    gap: 200px; /* Espace entre les blocs gauche, droite et l'image */
+}
+
+.about-info > div {
+    flex: 1; /* Divise l'espace entre gauche et droite */
+}
+
+.about-info.left {
+    text-align: right; /* Alignement des infos de gauche à droite */
+}
+
+.about-info.right {
+    text-align: left; /* Alignement des infos de droite à gauche */
+}
+
+.about-info.visible {
+    display: flex; /* Affiche le conteneur d'informations */
+}
+

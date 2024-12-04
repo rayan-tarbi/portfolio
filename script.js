@@ -4,22 +4,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");
 
-    let index = 0; // Index de l'image active
+    let index = 0;
 
-    // Fonction pour mettre à jour la position du carrousel
     const updateCarousel = () => {
         container.style.transform = `translateX(-${index * 100}%)`;
     };
 
-    // Bouton précédent
     prevButton.addEventListener("click", () => {
-        index = (index - 1 + items.length) % items.length; // Boucle vers la dernière image
+        index = (index - 1 + items.length) % items.length;
         updateCarousel();
     });
 
-    // Bouton suivant
     nextButton.addEventListener("click", () => {
-        index = (index + 1) % items.length; // Boucle vers la première image
+        index = (index + 1) % items.length; 
         updateCarousel();
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const profileImage = document.querySelector(".about-photo");
+    const aboutInfo = document.querySelector(".about-info");
+
+    profileImage.addEventListener("click", () => {
+        aboutInfo.classList.toggle("visible");
     });
 });
