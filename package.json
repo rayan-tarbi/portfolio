@@ -1,6 +1,6 @@
 {
   "name": "vs-portfolio",
-  "homepage": "https://github.com/rayan-tarbi/portfolio",
+  "homepage": "https://rayantarbi.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run dev",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
 
   },
