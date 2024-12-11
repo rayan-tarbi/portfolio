@@ -1,4 +1,3 @@
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faX,
@@ -72,11 +71,11 @@ const icons = {
 
 const introduction = {
   text: [
-    "Salut, Je suis content que tu consulte mon portfolio",
+    "Salut, je suis content que tu consultes mon portfolio",
 
-		"🇫🇷 Je m'appelle Rayan et j'ai 20 ans, je suis intéréssé par l'informatique depuis très petit. Je suis plus centré sur le developpeur logiciel mais j'adore apprendre surtout dans un domaine qui me plait.",
-    "J'ai plusieurs centres d'intêrets comme la musique, le skate, l'informatique, mon chien est plein d'autre encore.",
-    "🇺🇸 My name is Rayan i'm 20, i'm interessed by IT since i was a child. I focus more on software developpment and above all i love learning about different field. I have a lot of point of interest like music, skate, IT, my dog and many more.",
+    "🇫🇷 Je m'appelle Rayan et j'ai 20 ans, je suis intéressé par l'informatique depuis très petit. Je suis plus centré sur le développeur logiciel mais j'adore apprendre surtout dans un domaine qui me plaît.",
+    "J'ai plusieurs centres d'intérêts comme la musique, le skate, l'informatique, mon chien et plein d'autres encore.",
+    "🇺🇸 My name is Rayan I'm 20, I'm interested in IT since I was a child. I focus more on software development and above all I love learning about different fields. I have a lot of points of interest like music, skate, IT, my dog and many more.",
     "Installe mon CV ici."
   ],
 };
@@ -153,63 +152,63 @@ const skills = [
     title: 'HTML',
     icon: htmlIcon,
     description:
-      "J'aimerais encore m'amélioré même si c'est pas mon domaine de prédilection",
+      "J'aimerais encore m'améliorer même si ce n'est pas mon domaine de prédilection",
   },
   {
     id: 'css',
     title: 'CSS',
     icon: cssIcon,
     description:
-    "Je stylise mon experience en Web grace a ça j'aime beaucoup",
+    "Je stylise mon expérience en Web grâce à ça, j'aime beaucoup",
   },
   {
     id: 'javascript',
     title: 'JavaScript',
     icon: jsIcon,
     description:
-    "Cet outils est incroyable il est vraiment facile d'accès et j'adore faire de nouvelle choses avec.",
+    "Cet outil est incroyable, il est vraiment facile d'accès et j'adore faire de nouvelles choses avec.",
   },
   {
     id: 'java',
     title: 'Java',
     icon: javaIcon,
     description:
-      "Très Novice mais quelque test effectué hate d'en s'avoir +",
+      "Très novice, mais quelques tests effectués, hâte d'en savoir plus",
   },
   {
     id: 'figma',
     title: 'Figma',
     icon: figmaIcon,
     description:
-    "Débutant mais je m'améliore ",
+    "Débutant, mais je m'améliore",
   },
   {
     id: 'git',
     title: 'Git',
     icon: gitIcon,
     description:
-    "J'ai assimilié toute les fonction de git ",
+    "J'ai assimilé toutes les fonctions de git",
   },
   {
     id: 'github',
     title: 'GitHub',
     icon: githubIcon,
     description:
-      "J'utilise tout les jours github dans mes projects et ça m'aide beaucoup",
+      "J'utilise tous les jours GitHub dans mes projets et ça m'aide beaucoup",
   },
   {
     id: 'py',
     title: 'Python',
     icon: pyIcon,
     description:
-      "1 project a mon actif soif d'en apprendre d'avantage ",
+      "1 project à mon actif, soif d'en apprendre d'avantage ",
   },
   {
     id: 'node',
     title: 'Node',
     icon: nodeIcon,
     description:
-      "J'ai bien envie de s'avoir ou je peux pousser les limites de Node",
+      "J'ai bien envie de savoir où je peux pousser les limites de Node",
   },
 ];
 
