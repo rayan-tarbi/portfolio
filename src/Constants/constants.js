@@ -71,9 +71,9 @@ const icons = {
 
 const introduction = {
   text: [
-    "Salut, je suis content que tu consultes mon portfolio",
+    "Salut, je suis content que tu consultes mon portfolio !",
 
-    "🇫🇷 Je m'appelle Rayan et j'ai 20 ans, je suis passionné par l'informatique depuis petit. Je suis spécialisé dans le développement de logiciels, et j'ai soif de connaissances dans des domaines variés.",
+    "🇫🇷 Je m'appelle Rayan et j'ai 20 ans, je suis passionné par l'informatique depuis petit. Je suis spécialisé dans le développement de logiciels, tout en ayant soif de connaissances dans des domaines variés.",
     "J'ai énormément de centres d'intérêt dont la musique, le skateboard, les animaux, etc.",
     "🇬🇧 My name is Rayan, I'm 20. I have been interested in IT since I was a child. I tend to focus more on software development and above all I love learning about different fields. I have a lot of points of interest like music, skate, IT, my dog and many more.",
     "Télécharger mon CV ici."
@@ -102,7 +102,7 @@ export const navLinks = [
 const projects = [
   {
     name: "Tic-Tac-Toe Python",
-    description: 'Tic-Tac-Toe en Python Natif avec un robot intégrès',
+    description: 'Tic-Tac-Toe en Python Natif avec un robot intégré',
     image: memoryGame,
     source_code_link: 'https://github.com/rayan-tarbi/tic-tac-toe',
     demo_link: 'https://github.com/rayan-tarbi/tic-tac-toe',
