@@ -181,7 +181,7 @@ const skills = [
     title: 'Figma',
     icon: figmaIcon,
     description:
-    "Débutant,en cours d'amélioration",
+    "Débutant, en cours d'amélioration",
   },
   {
     id: 'git',
