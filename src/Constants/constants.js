@@ -160,7 +160,7 @@ const skills = [
     title: 'CSS',
     icon: cssIcon,
     description:
-    "Je stylise mon expérience en Web grâce à ça, j'aime beaucoup",
+    "Je stylise mon expérience en Web grâce à cet outils, j'aime beaucoup",
   },
   {
     id: 'javascript',
