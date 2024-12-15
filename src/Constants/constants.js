@@ -201,7 +201,7 @@ const skills = [
     title: 'Python',
     icon: pyIcon,
     description:
-      "1 project à mon actif, soif d'en apprendre d'avantage ",
+      "1 projet à mon actif, soif d'en apprendre davantage ",
   },
   {
     id: 'node',
