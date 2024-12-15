@@ -73,10 +73,10 @@ const introduction = {
   text: [
     "Salut, je suis content que tu consultes mon portfolio",
 
-    "🇫🇷 Je m'appelle Rayan et j'ai 20 ans, je suis intéressé par l'informatique depuis très petit. Je suis plus centré sur le développeur logiciel mais j'adore apprendre surtout dans un domaine qui me plaît.",
-    "J'ai plusieurs centres d'intérêts comme la musique, le skate, l'informatique, mon chien et plein d'autres encore.",
-    "🇺🇸 My name is Rayan I'm 20, I'm interested in IT since I was a child. I focus more on software development and above all I love learning about different fields. I have a lot of points of interest like music, skate, IT, my dog and many more.",
-    "Installe mon CV ici."
+    "🇫🇷 Je m'appelle Rayan et j'ai 20 ans, je suis passionnée par l'informatique depuis très petit. Je suis spécialisé dans le développement de logiciels, et j'ai soif de connaissance dans des domaines variées.",
+    "J'ai énormément de centres d'intérêt dont la musique, le skate-board, les animaux, etc.",
+    "🇬🇧 My name is Rayan I'm 20, I'm interested in IT since I was a child. I focus more on software development and above all I love learning about different fields. I have a lot of points of interest like music, skate, IT, my dog and many more.",
+    "Télécharger mon CV ici."
   ],
 };
 
