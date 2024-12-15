@@ -45,7 +45,7 @@ const ContactForm = () => {
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
           className="message text-7xl bg-primary-400 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
         >
-          <Typewriter words={["Contactez-moi :)"]} loop={true} />
+          <Typewriter words={["Me conctacter"]} loop={true} />
           &nbsp;
         </h2>
       </div>
@@ -71,7 +71,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-          <label htmlFor="lastname" style={{ fontWeight: 'bold', fontSize: '18px' }}>Nom de Famille</label>
+          <label htmlFor="lastname" style={{ fontWeight: 'bold', fontSize: '18px' }}>Nom de famille</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
               placeholder="Ex : Tarbi"
@@ -85,7 +85,7 @@ const ContactForm = () => {
           <label htmlFor="email" style={{ fontWeight: 'bold', fontSize: '18px' }}>E-mail</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
-              placeholder="Votre E-mail "
+              placeholder="Votre e-mail "
               id="email"
               type="email"
               name="from_email"
@@ -105,7 +105,7 @@ const ContactForm = () => {
           <input
             className="w-[100px] h-[50px] bg-primary-400 rounded-xl cursor-pointer hover:bg-primary-700 mb-5"
             type="submit"
-            value={!isSent ? 'Envoyez' : 'Nickel'}
+            value={!isSent ? 'Envoyer' : 'Nickel'}
           />
           </div>
         </form>
