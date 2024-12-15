@@ -127,7 +127,8 @@ const projects = [
     image: "https://media.giphy.com/media/dgVQkiSSL4TsZDrXYx/giphy.gif?cid=790b76112652xnmtoewdm9bmadyi6wrnkb627k0f53fyjm8y&ep=v1_gifs_search&rid=giphy.gif&ct=g",
     source_code_link: 'https://github.com/bl33h/clientSerhttps://github.com/rayan-tarbi/verChat',
     demo_link: 'https://github.com/rayan-tarbi/',
-  },{
+  },
+  {
     name: 'Coming Soon',
     description: 'Coming Soon',
     image: "https://media.giphy.com/media/dgVQkiSSL4TsZDrXYx/giphy.gif?cid=790b76112652xnmtoewdm9bmadyi6wrnkb627k0f53fyjm8y&ep=v1_gifs_search&rid=giphy.gif&ct=g",
