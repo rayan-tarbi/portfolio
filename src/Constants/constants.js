@@ -174,7 +174,7 @@ const skills = [
     title: 'Java',
     icon: javaIcon,
     description:
-      "Très novice, mais quelques tests effectués, hâte d'en savoir plus",
+      "Novice avec quelques tests effectués, hâte d'en savoir plus",
   },
   {
     id: 'figma',
