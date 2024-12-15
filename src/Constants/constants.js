@@ -109,16 +109,16 @@ const projects = [
   },
   {
     name: 'Fansite',
-    description: 'Fansite pour le grupe de regaie TRYO réalisé en groupe de 3 ',
+    description: 'Fansite pour le groupe de reggae TRYO réalisé en groupe de 3 ',
     image: "https://media.giphy.com/media/hdgsNz8VTSS0nzWpvR/giphy.gif",
     source_code_link: 'https://github.com/rayan-tarbi/fansite',
     demo_link: 'https://github.com/rayan-tarbi/fansite',
   },
   {
-    name: 'Portfolio',
-    description: 'Tu le consulte actuellement :p',
-    image: pawsitivePrototype,
-    source_code_link: 'link',
+    name: 'Coming Soon',
+    description: 'Coming Soon',
+    image: "https://media.giphy.com/media/dgVQkiSSL4TsZDrXYx/giphy.gif?cid=790b76112652xnmtoewdm9bmadyi6wrnkb627k0f53fyjm8y&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    source_code_link: 'https://github.com/bl33h/clientSerhttps://github.com/rayan-tarbi/verChat',
     demo_link: 'link',
   },
   {
@@ -187,7 +187,7 @@ const skills = [
     title: 'Git',
     icon: gitIcon,
     description:
-    "J'ai assimilé toutes les fonctions de git",
+    "J'ai assimilé toutes les fonctions de Git",
   },
   {
     id: 'github',
