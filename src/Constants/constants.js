@@ -160,28 +160,28 @@ const skills = [
     title: 'CSS',
     icon: cssIcon,
     description:
-    "Je stylise mon expérience web grâce à cet outils, j'aime beaucoup",
+    "Je stylise mon expérience web grâce à cet outil, j'aime beaucoup",
   },
   {
     id: 'javascript',
     title: 'JavaScript',
     icon: jsIcon,
     description:
-    "Cet outil est incroyable, il est vraiment facile d'accès et j'adore faire de nouvelles choses avec.",
+    "Cet outil est incroyable, vraiment facile d'accès et j'adore faire de nouvelles choses avec",
   },
   {
     id: 'java',
     title: 'Java',
     icon: javaIcon,
     description:
-      "Très novice, mais quelques tests effectués, hâte d'en savoir plus",
+      "Novice avec quelques tests effectués, hâte d'en savoir plus",
   },
   {
     id: 'figma',
     title: 'Figma',
     icon: figmaIcon,
     description:
-    "Débutant, mais je m'améliore",
+    "Débutant, en cours d'amélioration",
   },
   {
     id: 'git',
@@ -195,7 +195,7 @@ const skills = [
     title: 'GitHub',
     icon: githubIcon,
     description:
-      "J'utilise tous les jours GitHub dans mes projets et ça m'aide beaucoup",
+      "J'utilise tous les jours GitHub dans mes projets, ça m'aide beaucoup",
   },
   {
     id: 'py',
@@ -209,7 +209,7 @@ const skills = [
     title: 'Node',
     icon: nodeIcon,
     description:
-      "J'ai bien envie de savoir où je peux pousser les limites de Node",
+      "Acteullement en cours de familiarisation avec Node",
   },
 ];
 
